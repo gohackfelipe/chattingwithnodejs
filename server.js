@@ -1,6 +1,6 @@
 //	Customization
 
-var appPort = 16558;
+var appPort = 3000;
 
 // Librairies
 
@@ -27,9 +27,11 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res){
   res.render('home.jade');
 });
-server.listen(appPort);
+
+let SERVER_PORT = process.env.PORT || 3000;
+server.listen(SERVER_PORT);
 // app.listen(appPort);
-console.log("Server listening on port " + appPort);
+console.log("Server listening on port " + SERVER_PORT);
 
 // Handle the socket.io connections
 

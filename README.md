@@ -25,3 +25,4 @@ To use it, you need Node.js and those 3 modules.
 ### Credits
 
 Creator : [Geekuillaume] (http://geekuillau.me/)
+Modified: [gohackfelipe] 
